@@ -6,7 +6,7 @@ on:
     branches: [master]
 
 jobs:
-  publish:
+  release:
     runs-on: self-hosted
     steps:
 
@@ -28,4 +28,4 @@ jobs:
       - name: Create Github Release
         uses: arwynfr/actions-conventional-versioning@0.1.0
         with:
-            pattern: ./*.pbo
+            pattern: $(Convert-Path *.pbo)
