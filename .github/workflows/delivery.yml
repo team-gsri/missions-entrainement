@@ -1,41 +1,31 @@
-name: delivery
+name: release
 
 on:
+  workflow_dispatch:
   push:
     branches: [master]
 
 jobs:
   publish:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
+
       - name: Checkout files
         uses: actions/checkout@v2
 
-      - name: Lint sources
-        uses: arma-actions/sqflint@v1.0
-        with:
-          args: --exit e --directory FORM_Entrainement.Altis
-
       - name: Make mission pbo
-        uses: team-gsri/actions-make-pbo@master
+        uses: team-gsri/actions-build-mission@0.0.1
         with:
-          mission: FORM_Entrainement.Altis
-          briefingName: "[GSRI] Entrainement"
+          source: ./FORM_Entrainement.Altis
+          target: ./
 
-      - name: Upload pbo to github
+      - name: Upload PBO to github
         uses: actions/upload-artifact@v2
         with:
-          name: mission-pbo
-          path: FORM_Entrainement.Altis.pbo
+          name: mission
+          path: ./*.pbo
 
-      - name: Publish mission to Krypton
-        uses: team-gsri/actions-deploy-mission@master
-        env:
-          SSH_KNOWN_HOSTS: ${{ secrets.SSH_HOSTS_KEYS }}
-          SSH_HOSTNAME: ${{ secrets.SSH_ARMA3_HOSTNAME }}
-          SSH_USERNAME: ${{ secrets.SSH_ARMA3_USERNAME }}
-          SSH_KEY: ${{ secrets.SSH_KEY }}
+      - name: Create Github Release
+        uses: arwynfr/actions-conventional-versioning@0.1.0
         with:
-          localPath: FORM_Entrainement.Altis.pbo
-          remotePath: ${{ secrets.ARMA3_PATH }}/mpmissions/FORM_Entrainement.Altis.pbo
-          instanceName: ${{ secrets.ARMA3_INSTANCE }}
+            pattern: ./*.pbo
