@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.017453292;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=546;
+	toggles=514;
 	class ItemIDProvider
 	{
-		nextID=3006;
+		nextID=3008;
 	};
 	class LayerIndexProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={14689.197,20.511816,16784.609};
-		dir[]={0.37624347,-0.69072109,0.61754936};
-		up[]={0.35938299,0.72311246,0.58987504};
-		aside[]={0.8539952,3.166715e-007,-0.52029848};
+		pos[]={15130.317,20.991642,16843.367};
+		dir[]={-0.025859168,-0.51961535,-0.85401422};
+		up[]={-0.015726579,0.85439765,-0.51937729};
+		aside[]={-0.99954385,-5.4254997e-008,0.030265905};
 	};
 };
 binarizationWanted=0;
@@ -72,13 +72,15 @@ addons[]=
 	"A3_Structures_F_Items_Documents",
 	"A3_Structures_F_Items_Stationery",
 	"A3_Props_F_Orange_Humanitarian_Supplies",
-	"acex_sitting"
+	"acex_sitting",
+	"A3_Structures_F_Mark_Training",
+	"A3_Structures_F_EPA_Mil_Scrapyard"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=31;
+		items=32;
 		class Item0
 		{
 			className="A3_Structures_F";
@@ -287,6 +289,13 @@ class AddonsMetaData
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
+		class Item31
+		{
+			className="A3_Structures_F_Mark";
+			name="Arma 3 Marksmen - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 dlcs[]=
@@ -295,7 +304,8 @@ dlcs[]=
 	"Orange",
 	"Expansion",
 	"Argo",
-	"Contact"
+	"Contact",
+	"Mark"
 };
 randomSeed=9516941;
 class ScenarioData
@@ -429,7 +439,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=15;
+		items=17;
 		class Item0
 		{
 			dataType="Layer";
@@ -23684,6 +23694,111 @@ class Mission
 					};
 				};
 				nAttributes=1;
+			};
+		};
+		class Item15
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15127.969,17.927277,16838.766};
+				angles[]={0,0.76794487,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="missionNamespace setVariable [""GSRI_CCOM_AT_origin"", this]";
+			};
+			id=3006;
+			type="ShootingMat_01_Olive_F";
+		};
+		class Item16
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15130.77,18.360109,16838.768};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=3007;
+			type="Land_Pallet_MilBoxes_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_arsenal_attribute";
+					expression="if (!is3DEN) then {[_this, +_value] call ace_arsenal_fnc_attributeInit}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+							class value
+							{
+								items=2;
+								class Item0
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"ARRAY"
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"SCALAR"
+											};
+										};
+										value=1;
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
 			};
 		};
 	};

@@ -16,6 +16,10 @@ class Cfgfunctions {
 			class CCOM_identification_isGroupHidden {};
 			class CCOM_identification_isClassHidden {};
 		};
+		class CCOM_AT {
+			class CCOM_initAT {postInit = 1};
+			class CCOM_updateLaneAT {};
+		};
 	};
 };
 
