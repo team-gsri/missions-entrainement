@@ -24,7 +24,7 @@ if(_groupId != "") then {
 		if(_envId != "") then {
 			private _classIds = keys (_CCOM_env get _envId);
 			private _areHiddenClass = _classIds apply {[_envId, _x] call GSRI_fnc_CCOM_identification_isClassHidden};
-			private _isEnvMainlyHidden = ({_x == true} count _areHiddenClass >= count _areHiddenClass / 2);
+			private _isEnvMainlyHidden = ({_x isEqualTo true} count _areHiddenClass >= count _areHiddenClass / 2);
 			{
 				private _groupIds = keys (_CCOM_env get _envId get _x);
 				private _classId = _x;
