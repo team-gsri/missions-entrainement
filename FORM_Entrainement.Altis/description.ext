@@ -20,6 +20,9 @@ class Cfgfunctions {
 			class CCOM_initAT {postInit = 1};
 			class CCOM_updateLaneAT {};
 		};
+		class CCOM_PO {
+			class CCOM_initPO {};
+		};
 	};
 };
 
