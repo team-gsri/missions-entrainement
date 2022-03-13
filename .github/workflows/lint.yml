@@ -12,11 +12,6 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Lint sources
-        uses: arma-actions/sqflint@v1.0
+        uses: jokoho48/sqflint@master
         with:
           args: --exit e --directory FORM_Entrainement.Altis
-
-      - name: Make mission pbo
-        uses: team-gsri/actions-make-pbo@master
-        with:
-          mission: FORM_Entrainement.Altis
