@@ -1,3 +1,19 @@
+/*
+ * Author: www.gsri.team
+ * Will add required CBA settings to make the AT stand configurable.
+ *
+ * Arguments:
+ * None
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * None, autostarted in postInit phase, see CfgFunctions
+ *
+ * Public: No
+ */
+
 if(hasInterface) then {
 	{
 		[

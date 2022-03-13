@@ -1,3 +1,19 @@
+/*
+ * Author: www.gsri.team
+ * Will update AT stand lanes with configured parameters.
+ *
+ * Arguments:
+ * CBA Setting event handler standards.
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * None
+ *
+ * Public: No
+ */
+
 params ["_setting", "_value"];
 
 // Recover the lane identifier :

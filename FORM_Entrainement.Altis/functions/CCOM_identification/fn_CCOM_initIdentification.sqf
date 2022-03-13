@@ -1,3 +1,19 @@
+/*
+ * Author: www.gsri.team
+ * Will initialize the identification module by adding relevant actions on the control remote.
+ *
+ * Arguments:
+ * _ctrl, the object on which the actions are being added.
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * None
+ *
+ * Public: No
+ */
+
 params[["_ctrl", objNull]];
 if(isNull _ctrl) exitWith {};
 

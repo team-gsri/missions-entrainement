@@ -1,10 +1,24 @@
+/*
+ * Author: www.gsri.team
+ * Will (de)hide a whole (sub)category in identification module.
+ *
+ * Arguments:
+ * _envId, _classId, _groupId are the path through the vehicle tree. See configFile >> CCOM_Identification for identifiers.
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * None
+ *
+ * Public: No
+ */
+
 params[
 	["_envId", ""],
 	["_classId", ""],
 	["_groupId", ""]
 ];
-
-systemChat str _this;
 
 private _CCOM_env = missionNamespace getVariable "CCOM_Identification";
 

@@ -1,4 +1,19 @@
-// The source object is most likely the castle tower object (Land_Castle_01_tower_F), from which the played has to rappel down.
+/*
+ * Author: www.gsri.team
+ * Will add typical obstacles on the course based on the starting object.
+ *
+ * Arguments:
+ * _source, the course's starting object, most likely the castle tower object (Land_Castle_01_tower_F), from which the played has to rappel down.
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * None
+ *
+ * Public: No
+ */
+
 params[["_source", objNull]];
 if(isNull _source) exitWith { ["Tried to init an obstacle course with an empty source, aborting."] call BIS_fnc_error };
 
