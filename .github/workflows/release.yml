@@ -4,10 +4,11 @@ on:
   workflow_dispatch:
   push:
     branches: [master]
+    paths: ['FORM_Entrainement.Altis/**']
 
 jobs:
   release:
-    runs-on: self-hosted
+    runs-on: [self-hosted, arma-tools]
     steps:
 
       - name: Checkout files
