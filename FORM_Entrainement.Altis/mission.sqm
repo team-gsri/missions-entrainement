@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=3056;
+		nextID=3059;
 	};
 	class LayerIndexProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={15132.362,19.337664,17321.188};
-		dir[]={0.68801934,-0.44405708,0.57419533};
-		up[]={0.34109604,0.89588219,0.28466642};
-		aside[]={0.64082742,-2.3634784e-006,-0.76785994};
+		pos[]={15149.64,29.554726,17287.494};
+		dir[]={-0.60605156,-0.64520925,0.46519515};
+		up[]={-0.51181555,0.7640059,0.39286113};
+		aside[]={0.60888946,0,0.79325509};
 	};
 };
 binarizationWanted=0;
@@ -10148,6 +10148,7 @@ class Mission
 				{
 					dataType="Layer";
 					name="CQB Individuel";
+					state=1;
 					class Entities
 					{
 						items=6;
@@ -11373,7 +11374,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={15132.939,18.435043,17298.295};
+								position[]={15132.939,18.435177,17298.295};
 								angles[]={0,5.4803343,0};
 							};
 							side="Empty";
@@ -11384,7 +11385,7 @@ class Mission
 							};
 							id=1617;
 							type="Land_InfoStand_V1_F";
-							atlOffset=0.011865616;
+							atlOffset=0.01199913;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -17229,7 +17230,7 @@ class Mission
 						};
 					};
 					id=572;
-					atlOffset=-0.017728806;
+					atlOffset=-0.017723083;
 				};
 				class Item10
 				{
