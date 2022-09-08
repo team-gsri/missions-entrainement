@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Make mission pbo
-        uses: team-gsri/actions-build-mission@0.0.1
+        uses: team-gsri/actions-build-mission@0.1.1
         with:
           source: ./FORM_Entrainement.Altis
           target: ./
