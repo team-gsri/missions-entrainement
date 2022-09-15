@@ -11,8 +11,7 @@ private _piles = nearestObjects [position _center, ["Land_Battery_F"], 17, true]
 	_soldier disableAI "MOVE";
 	_soldier setDir getDir _x;
 	_objects pushBack _soldier;
-	systemChat str getPos _soldier;
 } forEach _piles;
 
-missionNamespace setVariable ["GSRI_CQB1_objects", _objects];
+missionNamespace setVariable ["GSRI_CQB1_objects", _objects, true];
 missionNamespace setVariable ["GSRI_CQB1_started", true, true];
