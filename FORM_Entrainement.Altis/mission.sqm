@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=3084;
+		nextID=3094;
 	};
 	class LayerIndexProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={15152.266,96.019447,17394.613};
-		dir[]={-0.0014300733,-0.74920493,-0.66234183};
-		up[]={-0.0016177547,0.66233593,-0.7492035};
-		aside[]={-1.0000007,4.135436e-007,0.0021595187};
+		pos[]={15133.754,20.224566,17287.461};
+		dir[]={0.22113928,-0.22552299,0.94880813};
+		up[]={0.051190775,0.9742378,0.21963635};
+		aside[]={0.97389781,0,-0.22698694};
 	};
 };
 binarizationWanted=0;
@@ -79,13 +79,14 @@ addons[]=
 	"A3_Structures_F_Exp_Walls_Net",
 	"A3_Structures_F_Exp_Military_Fortifications",
 	"A3_Structures_F_Mil_Helipads",
-	"A3_Structures_F_Argo_Decals_Horizontal"
+	"A3_Structures_F_Argo_Decals_Horizontal",
+	"Habs"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=33;
+		items=34;
 		class Item0
 		{
 			className="A3_Structures_F";
@@ -308,6 +309,11 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item33
+		{
+			className="Habs";
+			name="Habs";
+		};
 	};
 };
 dlcs[]=
@@ -428,7 +434,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=3;
+		items=4;
 		class Item0
 		{
 			dataType="Layer";
@@ -24086,6 +24092,23 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item3
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15131.424,20.112341,17297.393};
+				angles[]={0,3.9269907,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				init="this setObjectTexture[0, ""images\Panneau_CQB1_co.paa""]";
+			};
+			id=3093;
+			type="SCMS_Panneau4";
+			atlOffset=2.184;
 		};
 	};
 };
