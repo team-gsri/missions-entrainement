@@ -5,21 +5,21 @@ class EditorData
 	angleGridStep=1.5707964;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=522;
+	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=3082;
+		nextID=3084;
 	};
 	class LayerIndexProvider
 	{
-		nextID=666;
+		nextID=703;
 	};
 	class Camera
 	{
-		pos[]={15136.711,20.864008,17295.281};
-		dir[]={-0.42046803,-0.69032317,0.58897722};
-		up[]={-0.40116245,0.72337699,0.56194174};
-		aside[]={0.81397069,1.271721e-006,0.58108562};
+		pos[]={15152.266,96.019447,17394.613};
+		dir[]={-0.0014300733,-0.74920493,-0.66234183};
+		up[]={-0.0016177547,0.66233593,-0.7492035};
+		aside[]={-1.0000007,4.135436e-007,0.0021595187};
 	};
 };
 binarizationWanted=0;
@@ -9201,6 +9201,23 @@ class Mission
 									id=2618;
 									type="Land_Battery_F";
 									atlOffset=1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item1
 								{
@@ -9218,6 +9235,23 @@ class Mission
 									id=2619;
 									type="Land_Battery_F";
 									atlOffset=5.7220459e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item2
 								{
@@ -9235,6 +9269,23 @@ class Mission
 									id=2620;
 									type="Land_Battery_F";
 									atlOffset=-3.8146973e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item3
 								{
@@ -9252,6 +9303,23 @@ class Mission
 									id=2621;
 									type="Land_Battery_F";
 									atlOffset=-3.8146973e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item4
 								{
@@ -9269,6 +9337,23 @@ class Mission
 									id=2622;
 									type="Land_Battery_F";
 									atlOffset=-1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item5
 								{
@@ -9286,6 +9371,23 @@ class Mission
 									id=2623;
 									type="Land_Battery_F";
 									atlOffset=-1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item6
 								{
@@ -9303,6 +9405,23 @@ class Mission
 									id=2624;
 									type="Land_Battery_F";
 									atlOffset=-1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item7
 								{
@@ -9320,6 +9439,23 @@ class Mission
 									id=2625;
 									type="Land_Battery_F";
 									atlOffset=-1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item8
 								{
@@ -9337,6 +9473,23 @@ class Mission
 									id=2626;
 									type="Land_Battery_F";
 									atlOffset=-1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item9
 								{
@@ -9354,6 +9507,23 @@ class Mission
 									id=2627;
 									type="Land_Battery_F";
 									atlOffset=-5.7220459e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item10
 								{
@@ -9371,6 +9541,23 @@ class Mission
 									id=2628;
 									type="Land_Battery_F";
 									atlOffset=-7.6293945e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item11
 								{
@@ -9388,6 +9575,23 @@ class Mission
 									id=2629;
 									type="Land_Battery_F";
 									atlOffset=9.5367432e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item12
 								{
@@ -9405,6 +9609,23 @@ class Mission
 									id=2630;
 									type="Land_Battery_F";
 									atlOffset=-1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item13
 								{
@@ -9422,6 +9643,23 @@ class Mission
 									id=2631;
 									type="Land_Battery_F";
 									atlOffset=3.8146973e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item14
 								{
@@ -9439,6 +9677,23 @@ class Mission
 									id=2632;
 									type="Land_Battery_F";
 									atlOffset=1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item15
 								{
@@ -9454,6 +9709,23 @@ class Mission
 									};
 									id=2633;
 									type="Land_Battery_F";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item16
 								{
@@ -9471,6 +9743,23 @@ class Mission
 									id=2634;
 									type="Land_Battery_F";
 									atlOffset=-1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item17
 								{
@@ -9488,6 +9777,23 @@ class Mission
 									id=2635;
 									type="Land_Battery_F";
 									atlOffset=-1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item18
 								{
@@ -9505,6 +9811,23 @@ class Mission
 									id=2636;
 									type="Land_Battery_F";
 									atlOffset=-1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item19
 								{
@@ -9522,6 +9845,23 @@ class Mission
 									id=2637;
 									type="Land_Battery_F";
 									atlOffset=-1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item20
 								{
@@ -9538,6 +9878,23 @@ class Mission
 									id=2638;
 									type="Land_Battery_F";
 									atlOffset=-1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item21
 								{
@@ -9555,6 +9912,23 @@ class Mission
 									id=2639;
 									type="Land_Battery_F";
 									atlOffset=-1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item22
 								{
@@ -9572,6 +9946,23 @@ class Mission
 									id=2640;
 									type="Land_Battery_F";
 									atlOffset=-1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item23
 								{
@@ -9589,6 +9980,23 @@ class Mission
 									id=2641;
 									type="Land_Battery_F";
 									atlOffset=-1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item24
 								{
@@ -9606,6 +10014,23 @@ class Mission
 									id=2642;
 									type="Land_Battery_F";
 									atlOffset=-1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item25
 								{
@@ -9623,6 +10048,23 @@ class Mission
 									id=2644;
 									type="Land_Battery_F";
 									atlOffset=-1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item26
 								{
@@ -9640,6 +10082,23 @@ class Mission
 									id=2645;
 									type="Land_Battery_F";
 									atlOffset=-1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item27
 								{
@@ -9657,6 +10116,23 @@ class Mission
 									id=2646;
 									type="Land_Battery_F";
 									atlOffset=-1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item28
 								{
@@ -9674,6 +10150,23 @@ class Mission
 									id=2647;
 									type="Land_Battery_F";
 									atlOffset=-1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item29
 								{
@@ -9691,6 +10184,23 @@ class Mission
 									id=2648;
 									type="Land_Battery_F";
 									atlOffset=-1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item30
 								{
@@ -9708,6 +10218,23 @@ class Mission
 									id=2649;
 									type="Land_Battery_F";
 									atlOffset=-1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item31
 								{
@@ -9725,6 +10252,23 @@ class Mission
 									id=2650;
 									type="Land_Battery_F";
 									atlOffset=-1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item32
 								{
@@ -9742,6 +10286,23 @@ class Mission
 									id=2651;
 									type="Land_Battery_F";
 									atlOffset=-1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item33
 								{
@@ -9759,6 +10320,23 @@ class Mission
 									id=2652;
 									type="Land_Battery_F";
 									atlOffset=-1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item34
 								{
@@ -9776,6 +10354,23 @@ class Mission
 									id=2653;
 									type="Land_Battery_F";
 									atlOffset=-4.9591064e-005;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item35
 								{
@@ -9793,6 +10388,23 @@ class Mission
 									id=2654;
 									type="Land_Battery_F";
 									atlOffset=-1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item36
 								{
@@ -9810,6 +10422,23 @@ class Mission
 									id=2656;
 									type="Land_Battery_F";
 									atlOffset=-1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item37
 								{
@@ -9827,6 +10456,23 @@ class Mission
 									id=2657;
 									type="Land_Battery_F";
 									atlOffset=-0.00014877319;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item38
 								{
@@ -9844,6 +10490,23 @@ class Mission
 									id=2658;
 									type="Land_Battery_F";
 									atlOffset=-5.9127808e-005;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item39
 								{
@@ -9861,6 +10524,23 @@ class Mission
 									id=2659;
 									type="Land_Battery_F";
 									atlOffset=-1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item40
 								{
@@ -9878,6 +10558,23 @@ class Mission
 									id=2660;
 									type="Land_Battery_F";
 									atlOffset=-1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item41
 								{
@@ -9895,6 +10592,23 @@ class Mission
 									id=2661;
 									type="Land_Battery_F";
 									atlOffset=-1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item42
 								{
@@ -9912,6 +10626,23 @@ class Mission
 									id=2662;
 									type="Land_Battery_F";
 									atlOffset=-0.00015068054;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item43
 								{
@@ -9929,6 +10660,23 @@ class Mission
 									id=2663;
 									type="Land_Battery_F";
 									atlOffset=-1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item44
 								{
@@ -9946,6 +10694,23 @@ class Mission
 									id=2664;
 									type="Land_Battery_F";
 									atlOffset=-1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item45
 								{
@@ -9963,6 +10728,23 @@ class Mission
 									id=2669;
 									type="Land_Battery_F";
 									atlOffset=1.9073486e-006;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 								class Item46
 								{
@@ -9979,6 +10761,23 @@ class Mission
 									};
 									id=2670;
 									type="Land_Battery_F";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=1;
+									};
 								};
 							};
 							id=2937;
@@ -17269,7 +18068,7 @@ class Mission
 									};
 									id=3074;
 									type="Land_PortableDesk_01_olive_F";
-									atlOffset=0.00087547302;
+									atlOffset=0.00087738037;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -17337,7 +18136,7 @@ class Mission
 								};
 							};
 							id=3069;
-							atlOffset=0.00022125244;
+							atlOffset=0.00021934509;
 						};
 						class Item6
 						{
@@ -17465,7 +18264,7 @@ class Mission
 									};
 									id=3080;
 									type="Land_Projector_01_F";
-									atlOffset=3.17626;
+									atlOffset=3.1762619;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -17486,7 +18285,7 @@ class Mission
 								};
 							};
 							id=3073;
-							atlOffset=8.014143;
+							atlOffset=8.0141449;
 						};
 						class Item7
 						{
