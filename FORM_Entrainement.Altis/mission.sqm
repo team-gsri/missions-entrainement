@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={15133.754,20.224566,17287.461};
-		dir[]={0.22113928,-0.22552299,0.94880813};
-		up[]={0.051190775,0.9742378,0.21963635};
-		aside[]={0.97389781,0,-0.22698694};
+		pos[]={15138.233,19.344158,17299.385};
+		dir[]={-0.8948288,-0.25701663,0.36505544};
+		up[]={-0.23798569,0.96640766,0.097087696};
+		aside[]={0.37774608,4.6740752e-008,0.92593861};
 	};
 };
 binarizationWanted=0;
@@ -45,10 +45,12 @@ addons[]=
 	"ace_realisticnames",
 	"r_unfold",
 	"A3_Structures_F_Walls",
+	"Habs",
 	"A3_Structures_F_System",
 	"A3_Structures_F_Orange_Humanitarian_Camps",
 	"A3_Props_F_Enoch_Military_Camps",
 	"A3_Structures_F_Enoch_Military_Camps",
+	"A3_Structures_F_EPA_Mil_Scrapyard",
 	"A3_Structures_F_Items_Electronics",
 	"A3_Structures_F_Mark_Items_Sport",
 	"cba_xeh",
@@ -57,7 +59,6 @@ addons[]=
 	"A3_Props_F_Orange_Humanitarian_Camps",
 	"A3_Structures_F_Bootcamp_Training",
 	"A3_Structures_F_Mark_Training",
-	"A3_Structures_F_EPA_Mil_Scrapyard",
 	"A3_Structures_F_Items_Documents",
 	"A3_Structures_F_Items_Stationery",
 	"A3_Props_F_Orange_Humanitarian_Supplies",
@@ -79,8 +80,7 @@ addons[]=
 	"A3_Structures_F_Exp_Walls_Net",
 	"A3_Structures_F_Exp_Military_Fortifications",
 	"A3_Structures_F_Mil_Helipads",
-	"A3_Structures_F_Argo_Decals_Horizontal",
-	"Habs"
+	"A3_Structures_F_Argo_Decals_Horizontal"
 };
 class AddonsMetaData
 {
@@ -177,142 +177,142 @@ class AddonsMetaData
 		};
 		class Item13
 		{
+			className="Habs";
+			name="Habs";
+		};
+		class Item14
+		{
 			className="A3_Structures_F_Orange";
 			name="Arma 3 Orange - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item14
+		class Item15
 		{
 			className="A3_Props_F_Enoch";
 			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item15
+		class Item16
 		{
 			className="A3_Structures_F_Enoch_Military";
 			name="Arma 3 Contact Platform - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item16
+		class Item17
 		{
 			className="A3_Structures_F_Mark";
 			name="Arma 3 Marksmen - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item17
+		class Item18
 		{
 			className="A3_Structures_F_Heli";
 			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item18
+		class Item19
 		{
 			className="A3_Props_F_Orange";
 			name="Arma 3 Orange - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item19
+		class Item20
 		{
 			className="A3_Structures_F_Bootcamp";
 			name="Arma 3 Bootcamp Update - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item20
+		class Item21
 		{
 			className="ace_sitting";
 			name="ACE3 - Sitting";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item21
+		class Item22
 		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item22
+		class Item23
 		{
 			className="tfar_handhelds";
 			name="tfar_handhelds";
 			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
 		};
-		class Item23
+		class Item24
 		{
 			className="gsri_headgear";
 			name="gsri_headgear";
 			author="www.gsri.team";
 		};
-		class Item24
+		class Item25
 		{
 			className="VSM_ACU_Config";
 			name="VSM_ACU_Config";
 		};
-		class Item25
+		class Item26
 		{
 			className="A3_Structures_F_EPB";
 			name="Arma 3 Adapt Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item26
+		class Item27
 		{
 			className="A3_Structures_F_Ind";
 			name="Arma 3 - Industrial Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item27
+		class Item28
 		{
 			className="A3_Soft_F_Exp";
 			name="Arma 3 Apex - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item28
+		class Item29
 		{
 			className="kat_misc";
 			name="KAT - KAT - MISC";
 			author="Katalam";
 			url="https://github.com/Tomcat-SG/KAM";
 		};
-		class Item29
+		class Item30
 		{
 			className="plp_containers";
 			name="plp_containers";
 		};
-		class Item30
+		class Item31
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item31
+		class Item32
 		{
 			className="A3_Structures_F_Exp";
 			name="Arma 3 Apex - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item32
+		class Item33
 		{
 			className="A3_Structures_F_Argo";
 			name="Arma 3 Malden - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
-		};
-		class Item33
-		{
-			className="Habs";
-			name="Habs";
 		};
 	};
 };
@@ -434,7 +434,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=4;
+		items=2;
 		class Item0
 		{
 			dataType="Layer";
@@ -17529,7 +17529,7 @@ class Mission
 							name="Pares-balle";
 							class Entities
 							{
-								items=20;
+								items=21;
 								class Item0
 								{
 									dataType="Object";
@@ -17853,9 +17853,26 @@ class Mission
 									id=3034;
 									type="Land_HBarrierWall6_F";
 								};
+								class Item20
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={15131.424,20.112341,17297.393};
+										angles[]={0,3.9269907,0};
+									};
+									side="Empty";
+									class Attributes
+									{
+										init="this setObjectTexture[0, ""images\Panneau_CQB1_co.paa""]";
+									};
+									id=3093;
+									type="SCMS_Panneau4";
+									atlOffset=2.184;
+								};
 							};
 							id=3044;
-							atlOffset=-0.016447067;
+							atlOffset=1.0778027;
 						};
 						class Item4
 						{
@@ -18024,7 +18041,7 @@ class Mission
 							name="Tente";
 							class Entities
 							{
-								items=4;
+								items=5;
 								class Item0
 								{
 									dataType="Object";
@@ -18140,9 +18157,44 @@ class Mission
 										nAttributes=2;
 									};
 								};
+								class Item4
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={15135.523,18.466013,17297.742};
+										angles[]={6.282033,0.70319319,0.0027401671};
+									};
+									side="Empty";
+									flags=4;
+									class Attributes
+									{
+										name="cqb_arsenal";
+										disableSimulation=1;
+									};
+									id=3081;
+									type="Land_PaperBox_open_full_F";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
 							};
 							id=3069;
-							atlOffset=0.00021934509;
+							atlOffset=-0.00056648254;
 						};
 						class Item6
 						{
@@ -18298,7 +18350,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={15137.185,18.920591,17299.979};
+								position[]={15137.185,18.920603,17299.979};
 								angles[]={6.2811785,4.9872432,6.2810035};
 							};
 							side="Empty";
@@ -18310,10 +18362,23 @@ class Mission
 							};
 							id=3075;
 							type="Land_Laptop_03_olive_F";
-							atlOffset=4.7683716e-005;
+							atlOffset=5.9127808e-005;
 							class CustomAttributes
 							{
 								class Attribute0
+								{
+									property="ObjectTextureCustom1";
+									expression="_this setObjectTextureGlobal [1,_value]";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="images\splash.jpg";
+										};
+									};
+								};
+								class Attribute1
 								{
 									property="allowDamage";
 									expression="_this allowdamage _value;";
@@ -18326,12 +18391,12 @@ class Mission
 										};
 									};
 								};
-								nAttributes=1;
+								nAttributes=2;
 							};
 						};
 					};
 					id=572;
-					atlOffset=2.4281788;
+					atlOffset=1.251936;
 				};
 				class Item10
 				{
@@ -20423,7 +20488,7 @@ class Mission
 				};
 			};
 			id=105;
-			atlOffset=2.9031544;
+			atlOffset=2.9028778;
 		};
 		class Item1
 		{
@@ -24057,58 +24122,6 @@ class Mission
 			};
 			id=2914;
 			atlOffset=-0.3817997;
-		};
-		class Item2
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15135.523,18.466013,17297.742};
-				angles[]={6.282033,0.70319319,0.0027401671};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				name="cqb_arsenal";
-				disableSimulation=1;
-			};
-			id=3081;
-			type="Land_PaperBox_open_full_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item3
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15131.424,20.112341,17297.393};
-				angles[]={0,3.9269907,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				init="this setObjectTexture[0, ""images\Panneau_CQB1_co.paa""]";
-			};
-			id=3093;
-			type="SCMS_Panneau4";
-			atlOffset=2.184;
 		};
 	};
 };
