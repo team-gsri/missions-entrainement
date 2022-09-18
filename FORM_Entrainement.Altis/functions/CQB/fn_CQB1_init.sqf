@@ -14,6 +14,7 @@ private _piles = nearestObjects [position _center, ["Land_Battery_F"], 17, true]
 	_soldier disableAI "MOVE";
 	_soldier setDir getDir _x;
 	_soldier setUnitLoadout (missionConfigFile >> "CQB1_eni_loadout");
+	_soldier setVariable ["GSRI_CQB1_deathIfUnconscious", true];
 	_objects pushBack _soldier;
 } forEach _piles;
 
