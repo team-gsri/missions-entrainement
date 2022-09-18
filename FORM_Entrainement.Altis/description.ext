@@ -1,3 +1,27 @@
 class cfgfunctions {
-  #include "functions.hpp"
+  class tyypalFunctions {
+    tag = "tyypal";
+    class cies {
+      file = "script";
+      class cqb_1 {};
+      class cqb_2 {};
+      class agrougrou {};
+    };
+  };
+
+  class GSRI {
+    class CQB {
+      class CQB1_init {};
+      class CQB1_end {};
+    };
+  };
+};
+
+class CQB1_eni_loadout {
+  uniformClass = "U_O_CombatUniform_ocamo";
+  backpack = "";
+  linkedItems[] = {"V_HarnessO_brn", "H_HelmetO_ocamo"};
+  weapons[] = {"arifle_Katiba_F"};
+  items[] = {};
+  magazines[] = {"30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green"};
 };
