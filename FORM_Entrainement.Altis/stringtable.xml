@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Project name="GSRI Entrainement">
-    <Key ID="GSRI_Entrainement_CQB1">
-        <Original>Angle opening course</Original>
-        <English>Angle opening course</English>
-        <French>Parcours d'ouverture d'angles</French>
-    </Key>
-    <Key ID="GSRI_Entrainement_CQB1_activated">
-        <Original>Course has been enabled, keep out !</Original>
-        <English>Course has been enabled, keep out !</English>
-        <French>Parcours activé, restez éloigné !</French>
-    </Key>
-    <Key ID="GSRI_Entrainement_CQB1_deactivated">
-        <Original>Course has been disabled, now safe to go through.</Original>
-        <English>Course has been disabled, now safe to go through.</English>
-        <French>Parcours désactivé, traversée possible.</French>
-    </Key>
+    <Package name="CQB1">
+        <Key ID="GSRI_Entrainement_CQB1">
+            <Original>Angle opening course</Original>
+            <English>Angle opening course</English>
+            <French>Parcours d'ouverture d'angles</French>
+        </Key>
+        <Key ID="GSRI_Entrainement_CQB1_start">
+            <Original>Start course</Original>
+            <English>Start course</English>
+            <French>Démarrer le parcours</French>
+        </Key>
+        <Key ID="GSRI_Entrainement_CQB1_stop">
+            <Original>Stop course</Original>
+            <English>Stop course</English>
+            <French>Stopper le parcours</French>
+        </Key>
+        <Key ID="GSRI_Entrainement_CQB1_activated">
+            <Original>Course has been enabled, keep out !</Original>
+            <English>Course has been enabled, keep out !</English>
+            <French>Parcours activé, restez éloigné !</French>
+        </Key>
+        <Key ID="GSRI_Entrainement_CQB1_deactivated">
+            <Original>Course has been disabled, now safe to go through.</Original>
+            <English>Course has been disabled, now safe to go through.</English>
+            <French>Parcours désactivé, traversée possible.</French>
+        </Key>
+    </Package>
 </Project>

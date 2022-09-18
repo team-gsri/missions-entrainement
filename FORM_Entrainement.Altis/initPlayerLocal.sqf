@@ -8,7 +8,7 @@ private _lockers = nearestObjects [position quartiers, ["plp_ct_LockerBig"], 50,
 
 private _actionStartCQB1 = [
     "startCQB1",
-    "Start course",
+    localize "GSRI_Entrainement_CQB1_start",
     "",
     {_this remoteExec ["GSRI_fnc_CQB1_init", 2]},
     {!(missionNamespace getVariable ["GSRI_CQB1_started", false])},
@@ -18,7 +18,7 @@ private _actionStartCQB1 = [
 
 private _actionEndCQB1 = [
     "endCQB1",
-    "End course",
+    localize "GSRI_Entrainement_CQB1_stop",
     "",
     {[] remoteExec ["GSRI_fnc_CQB1_end", 2]},
     {(missionNamespace getVariable ["GSRI_CQB1_started", false])},
