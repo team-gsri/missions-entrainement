@@ -16,6 +16,11 @@
             <English>Stop course</English>
             <French>Stopper le parcours</French>
         </Key>
+        <Key ID="GSRI_Entrainement_CQB1_unfuckCam">
+            <Original>Debug camera feedback</Original>
+            <English>Debug camera feedback</English>
+            <French>Débugger le retour vidéo</French>
+        </Key>
         <Key ID="GSRI_Entrainement_CQB1_activated">
             <Original>Course has been enabled, keep out !</Original>
             <English>Course has been enabled, keep out !</English>

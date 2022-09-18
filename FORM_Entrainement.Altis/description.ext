@@ -12,6 +12,7 @@ class cfgfunctions {
   class GSRI {
     class CQB {
       class CQB1_init {};
+      class CQB1_camInit {};
       class CQB1_end {};
     };
   };

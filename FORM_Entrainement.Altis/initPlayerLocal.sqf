@@ -9,7 +9,7 @@ private _lockers = nearestObjects [position quartiers, ["plp_ct_LockerBig"], 50,
 private _actionStartCQB1 = [
     "startCQB1",
     localize "GSRI_Entrainement_CQB1_start",
-    "",
+    "\A3\ui_f\data\igui\cfg\simpleTasks\types\attack_ca.paa",
     {_this remoteExec ["GSRI_fnc_CQB1_init", 2]},
     {!(missionNamespace getVariable ["GSRI_CQB1_started", false])},
     {},
@@ -19,7 +19,7 @@ private _actionStartCQB1 = [
 private _actionEndCQB1 = [
     "endCQB1",
     localize "GSRI_Entrainement_CQB1_stop",
-    "",
+    "\A3\ui_f\data\igui\cfg\simpleTasks\types\attack_ca.paa",
     {[] remoteExec ["GSRI_fnc_CQB1_end", 2]},
     {(missionNamespace getVariable ["GSRI_CQB1_started", false])},
     {}
@@ -28,19 +28,13 @@ private _actionEndCQB1 = [
 [controle_cqb1, 0, ["ACE_MainActions"], _actionStartCQB1] call ace_interact_menu_fnc_addActionToObject;
 [controle_cqb1, 0, ["ACE_MainActions"], _actionEndCQB1] call ace_interact_menu_fnc_addActionToObject;
 
+// First CQB1 camera call + action to debug it if needed.
+[] call GSRI_fnc_CQB1_camInit;
 private _actionReinitFeed = [
     "reinitFeed",
-    "Reinit camera feed",
-    "",
-    {
-        deleteVehicle feedbackcam_cqb1;
-        feedback_cqb1 setObjectTexture [0, "#(argb,512,512,1)r2t(camfeed_cqb1,2.3)"];
-        feedbackcam_cqb1 = "camera" camCreate getPosATL camera_cbq_individuel;
-        feedbackcam_cqb1 camSetTarget cone_cqb_1;
-        feedbackcam_cqb1 camSetFov 0.65;
-        feedbackcam_cqb1 camCommit 0;
-        feedbackcam_cqb1 cameraEffect ["Internal", "Back", "camfeed_cqb1"];
-    },
+    localize "GSRI_Entrainement_CQB1_unfuckCam",
+    "\A3\ui_f\data\igui\cfg\simpleTasks\types\whiteboard_ca.paa",
+    {[] remoteExecCall ["GSRI_fnc_CQB1_camInit", 0]},
     {true}
 ] call ace_interact_menu_fnc_createAction;
 [controle_cqb1, 0, ["ACE_MainActions"], _actionReinitFeed] call ace_interact_menu_fnc_addActionToObject;
