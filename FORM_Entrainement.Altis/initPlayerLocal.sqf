@@ -46,3 +46,12 @@ private _actionReinitFeed = [
     private _description = ["GSRI_Entrainement_CQB1_deactivated", "GSRI_Entrainement_CQB1_activated"] select _activated;
     ["CQB1_activation", [localize "GSRI_Entrainement_CQB1", localize _description]] call BIS_fnc_showNotification;
 }] call CBA_fnc_addEventHandler;
+
+// Teleport unconscious player back to tent and heal them
+["ace_unconscious", {
+    params["_unit", "_isUnconscious"];
+    if(_isUnconscious && _unit == player && _unit distance cone_cqb_1 < 30) then {
+        player setPos [15140.3,17298,0];
+        [player, player] call ace_medical_treatment_fnc_fullHeal;
+    };
+}] call CBA_fnc_addEventHandler;
