@@ -7,3 +7,5 @@ private _objects = missionNamespace getVariable ["GSRI_CQB1_objects", []];
 
 missionNamespace setVariable ["GSRI_CQB1_objects", nil, true];
 missionNamespace setVariable ["GSRI_CQB1_started", false, true];
+
+["GSRI_CQB1_activation", false] call CBA_fnc_globalEvent;

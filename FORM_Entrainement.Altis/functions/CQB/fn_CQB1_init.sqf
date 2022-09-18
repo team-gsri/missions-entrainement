@@ -1,6 +1,9 @@
 params["", "", "_params"];
 _params params ["_center"];
 
+// Used by location-based client-side notification.
+["GSRI_CQB1_activation", true] call CBA_fnc_globalEvent;
+
 // Used objects array
 private _objects = missionNamespace getVariable ["GSRI_CQB1_objects", []];
 

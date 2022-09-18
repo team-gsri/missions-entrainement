@@ -45,3 +45,10 @@ private _actionReinitFeed = [
 ] call ace_interact_menu_fnc_createAction;
 [controle_cqb1, 0, ["ACE_MainActions"], _actionReinitFeed] call ace_interact_menu_fnc_addActionToObject;
 
+// Selective notifications for CQB1, only display notif if player is less than 30m away
+["GSRI_CQB1_activation", {
+    if(player distance cone_cqb_1 > 30) exitWith {};
+    params["_activated"];
+    private _description = ["GSRI_Entrainement_CQB1_deactivated", "GSRI_Entrainement_CQB1_activated"] select _activated;
+    ["CQB1_activation", [localize "GSRI_Entrainement_CQB1", localize _description]] call BIS_fnc_showNotification;
+}] call CBA_fnc_addEventHandler;

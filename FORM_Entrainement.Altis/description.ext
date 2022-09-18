@@ -25,3 +25,12 @@ class CQB1_eni_loadout {
   items[] = {};
   magazines[] = {"30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green"};
 };
+
+class CfgNotifications {
+  class CQB1_activation {
+    title = "%1";
+    iconPicture = "\A3\ui_f\data\igui\cfg\simpleTasks\types\attack_ca.paa";
+    description = "%2";
+    duration = 5;
+  };
+};
