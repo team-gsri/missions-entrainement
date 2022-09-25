@@ -12,6 +12,7 @@ private _piles = nearestObjects [position _center, ["Land_Battery_F"], 17, true]
 	private _group = createGroup [east, true];
 	private _soldier = _group createUnit ["O_Soldier_F", getPos _x ,[],0,"CAN_COLLIDE"];
 	_soldier disableAI "MOVE";
+	_soldier disableAI "PATH";
 	_soldier setDir getDir _x;
 	_soldier setUnitLoadout (missionConfigFile >> "CQB1_eni_loadout");
 	_soldier setVariable ["GSRI_CQB1_deathIfUnconscious", true];
