@@ -1,37 +1,40 @@
 class cfgfunctions {
-  class tyypalFunctions {
-    tag = "tyypal";
-    class cies {
-      file = "script";
-      class cqb_1 {};
-      class cqb_2 {};
-      class agrougrou {};
+    class tyypalFunctions {
+        tag = "tyypal";
+        class cies {
+            file = "script";
+            class cqb_1 {};
+            class cqb_2 {};
+            class agrougrou {};
+        };
     };
-  };
 
-  class GSRI {
-    class CQB {
-      class CQB1_init {};
-      class CQB1_camInit {};
-      class CQB1_end {};
+    class GSRI {
+        class CQB {
+            class CQB1_init {};
+            class CQB1_camInit {};
+            class CQB1_end {};
+        };
+        class CCOM_PO {
+            class CCOM_initPO {};
+        };
     };
-  };
 };
 
 class CQB1_eni_loadout {
-  uniformClass = "U_O_CombatUniform_ocamo";
-  backpack = "";
-  linkedItems[] = {"V_HarnessO_brn", "H_HelmetO_ocamo"};
-  weapons[] = {"arifle_Katiba_F"};
-  items[] = {};
-  magazines[] = {"30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green"};
+    uniformClass = "U_O_CombatUniform_ocamo";
+    backpack = "";
+    linkedItems[] = {"V_HarnessO_brn", "H_HelmetO_ocamo"};
+    weapons[] = {"arifle_Katiba_F"};
+    items[] = {};
+    magazines[] = {"30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green"};
 };
 
 class CfgNotifications {
-  class CQB1_activation {
-    title = "%1";
-    iconPicture = "\A3\ui_f\data\igui\cfg\simpleTasks\types\attack_ca.paa";
-    description = "%2";
-    duration = 5;
-  };
+    class CQB1_activation {
+        title = "%1";
+        iconPicture = "\A3\ui_f\data\igui\cfg\simpleTasks\types\attack_ca.paa";
+        description = "%2";
+        duration = 5;
+    };
 };
