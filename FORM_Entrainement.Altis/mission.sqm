@@ -5,21 +5,21 @@ class EditorData
 	angleGridStep=1.5707964;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=513;
+	toggles=545;
 	class ItemIDProvider
 	{
-		nextID=3094;
+		nextID=3100;
 	};
 	class LayerIndexProvider
 	{
-		nextID=703;
+		nextID=777;
 	};
 	class Camera
 	{
-		pos[]={15138.233,19.344158,17299.385};
-		dir[]={-0.8948288,-0.25701663,0.36505544};
-		up[]={-0.23798569,0.96640766,0.097087696};
-		aside[]={0.37774608,4.6740752e-008,0.92593861};
+		pos[]={15133.185,21.530533,17293.787};
+		dir[]={-0.11808012,-0.85741782,0.500911};
+		up[]={-0.19672813,0.51461893,0.83454424};
+		aside[]={0.9733308,-1.8626451e-008,0.22944374};
 	};
 };
 binarizationWanted=0;
@@ -46,6 +46,7 @@ addons[]=
 	"r_unfold",
 	"A3_Structures_F_Walls",
 	"Habs",
+	"A3_Structures_F_Heli_Items_Airport",
 	"A3_Structures_F_System",
 	"A3_Structures_F_Orange_Humanitarian_Camps",
 	"A3_Props_F_Enoch_Military_Camps",
@@ -182,36 +183,36 @@ class AddonsMetaData
 		};
 		class Item14
 		{
+			className="A3_Structures_F_Heli";
+			name="Arma 3 Helicopters - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item15
+		{
 			className="A3_Structures_F_Orange";
 			name="Arma 3 Orange - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item15
+		class Item16
 		{
 			className="A3_Props_F_Enoch";
 			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item16
+		class Item17
 		{
 			className="A3_Structures_F_Enoch_Military";
 			name="Arma 3 Contact Platform - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item17
+		class Item18
 		{
 			className="A3_Structures_F_Mark";
 			name="Arma 3 Marksmen - Buildings and Structures";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item18
-		{
-			className="A3_Structures_F_Heli";
-			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -318,10 +319,10 @@ class AddonsMetaData
 };
 dlcs[]=
 {
+	"Heli",
 	"Orange",
 	"Contact",
 	"Mark",
-	"Heli",
 	"Enoch",
 	"Expansion",
 	"Argo"
@@ -17529,7 +17530,7 @@ class Mission
 							name="Pares-balle";
 							class Entities
 							{
-								items=21;
+								items=25;
 								class Item0
 								{
 									dataType="Object";
@@ -17551,17 +17552,18 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={15130.868,19.010746,17297.934};
-										angles[]={0.0039968039,5.4977875,0.0053232545};
+										position[]={15130.868,19.010925,17297.934};
+										angles[]={0.0039968039,5.497787,0.0053232545};
 									};
 									side="Empty";
 									flags=4;
 									class Attributes
 									{
+										name="cqb1_abri1";
 									};
 									id=3043;
 									type="Land_CncShelter_F";
-									atlOffset=-0.0011787415;
+									atlOffset=-0.00099945068;
 								};
 								class Item2
 								{
@@ -17870,9 +17872,145 @@ class Mission
 									type="SCMS_Panneau4";
 									atlOffset=2.184;
 								};
+								class Item21
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={15131.093,20.14443,17297.113};
+										angles[]={4.712389,0,5.497787};
+									};
+									side="Empty";
+									class Attributes
+									{
+										name="cqb1_red1";
+									};
+									id=3094;
+									type="PortableHelipadLight_01_red_F";
+									atlOffset=2.1870003;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item22
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={15131.704,20.145174,17297.725};
+										angles[]={4.712389,0,5.497787};
+									};
+									side="Empty";
+									class Attributes
+									{
+										name="cqb1_red2";
+									};
+									id=3097;
+									type="PortableHelipadLight_01_red_F";
+									atlOffset=2.191;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item23
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={15131.093,20.14443,17297.113};
+										angles[]={4.712389,0,5.497787};
+									};
+									side="Empty";
+									class Attributes
+									{
+										name="cqb1_green1";
+									};
+									id=3098;
+									type="PortableHelipadLight_01_green_F";
+									atlOffset=2.1870003;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
+								class Item24
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={15131.704,20.145174,17297.725};
+										angles[]={4.712389,0,5.497787};
+									};
+									side="Empty";
+									class Attributes
+									{
+										name="cqb1_green2";
+									};
+									id=3099;
+									type="PortableHelipadLight_01_green_F";
+									atlOffset=2.191;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										nAttributes=1;
+									};
+								};
 							};
 							id=3044;
-							atlOffset=1.0778027;
+							atlOffset=2.1211414;
 						};
 						class Item4
 						{
@@ -18396,7 +18534,7 @@ class Mission
 						};
 					};
 					id=572;
-					atlOffset=1.251936;
+					atlOffset=2.4943714;
 				};
 				class Item10
 				{
@@ -20488,7 +20626,7 @@ class Mission
 				};
 			};
 			id=105;
-			atlOffset=2.9028778;
+			atlOffset=2.9029932;
 		};
 		class Item1
 		{
