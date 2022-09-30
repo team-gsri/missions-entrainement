@@ -11,30 +11,8 @@ jobs:
     runs-on: [self-hosted, arma-tools]
     steps:
 
-      - name: Checkout files
-        uses: actions/checkout@v3
-        
-      - name: Get new version
-        id: new-version
-        uses: arwynfr/actions-conventional-versioning@0.2.1
-        with:
-            pattern: $(Convert-Path *.pbo)
-            whatif: '$true'
-            
       - name: Make mission pbo
-        uses: team-gsri/actions-build-mission@0.1.1
+        uses: team-gsri/actions-arma-tools/release-mission@0.0.3
         with:
-          briefingName: 'Entrainement ${{ steps.new-version.outputs.next-version }}'
+          missionName: Entrainement
           source: ./FORM_Entrainement.Altis
-          target: ./
-
-      - name: Upload PBO to github
-        uses: actions/upload-artifact@v3
-        with:
-          name: mission
-          path: ./*.pbo
-
-      - name: Create Github Release
-        uses: arwynfr/actions-conventional-versioning@0.2.1
-        with:
-            pattern: $(Convert-Path *.pbo)
