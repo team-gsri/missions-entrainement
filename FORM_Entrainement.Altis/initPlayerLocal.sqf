@@ -34,7 +34,7 @@ private _actionReinitFeed = [
     "reinitFeed",
     localize "GSRI_Entrainement_CQB1_unfuckCam",
     "\A3\ui_f\data\igui\cfg\simpleTasks\types\whiteboard_ca.paa",
-    {[] remoteExecCall ["GSRI_fnc_CQB1_camInit", 0]},
+    {[] call GSRI_fnc_CQB1_camInit},
     {true}
 ] call ace_interact_menu_fnc_createAction;
 [controle_cqb1, 0, ["ACE_MainActions"], _actionReinitFeed] call ace_interact_menu_fnc_addActionToObject;
