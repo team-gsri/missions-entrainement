@@ -4,15 +4,14 @@ on:
   workflow_dispatch:
   push:
     branches: [master]
-    paths: ['FORM_Entrainement.Altis/**']
+    paths: ["FORM_Entrainement.Altis/**"]
 
 jobs:
   release:
     runs-on: [self-hosted, arma-tools]
     steps:
-
       - name: Make mission pbo
-        uses: team-gsri/actions-arma-tools/release-mission@0.0.3
+        uses: team-gsri/actions-arma-tools/release-mission@v0
         with:
           missionName: Entrainement
           source: ./FORM_Entrainement.Altis
