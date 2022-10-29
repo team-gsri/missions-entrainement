@@ -8,9 +8,14 @@
 
 // Properly set CQB1 lights
 {
-    _x attachTo [cqb1_abri1];
-    _x setVectorDirAndUp [[0,0,1], [0,-1,0]];
-} forEach [cqb1_red1, cqb1_red2, cqb1_green1, cqb1_green2];
+    _x#0 attachTo [cqb1_abri1, _x#1];
+    _x#0 setVectorDirAndUp [[0,0,1], [0,-1,0]];
+} forEach [
+    [cqb1_red1, [-0.42,-0.74,1.13]],
+    [cqb1_red2, [0.44,-0.74,1.13]],
+    [cqb1_green1, [-0.42,-0.74,1.13]],
+    [cqb1_green2, [0.44,-0.74,1.13]]
+];
 { _x hideObjectGlobal true } forEach [cqb1_red1,cqb1_red2];
 // Flip alert lights
 ["GSRI_CQB1_activation", { { _x hideObjectGlobal !(isObjectHidden _x) } forEach [cqb1_red1, cqb1_red2, cqb1_green1, cqb1_green2] }] call CBA_fnc_addEventHandler;
