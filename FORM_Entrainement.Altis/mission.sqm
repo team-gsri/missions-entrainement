@@ -6,13 +6,17 @@ class EditorData
 	scaleGridStep=1;
 	autoGroupingDist=10;
 	toggles=545;
+	mods[]=
+	{
+		"gsri_opex"
+	};
 	class ItemIDProvider
 	{
 		nextID=3103;
 	};
 	class LayerIndexProvider
 	{
-		nextID=888;
+		nextID=925;
 	};
 	class Camera
 	{
@@ -69,7 +73,7 @@ addons[]=
 	"asr_ai3_skills",
 	"A3_Weapons_F",
 	"tfar_handhelds",
-	"gsri_headgear",
+	"gsri_equipment",
 	"VSM_ACU_Config",
 	"A3_Structures_F_Mil_Flags",
 	"A3_Structures_F_EPB_Civ_Camping",
@@ -252,8 +256,8 @@ class AddonsMetaData
 		};
 		class Item24
 		{
-			className="gsri_headgear";
-			name="gsri_headgear";
+			className="gsri_equipment";
+			name="gsri_equipment";
 			author="www.gsri.team";
 		};
 		class Item25
@@ -350,7 +354,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -387,7 +391,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category1
+	class Category2
 	{
 		name="Scenario";
 		class Attribute0
@@ -23413,11 +23417,11 @@ class Mission
 								};
 							};
 							id=2907;
-							atlOffset=0.0042648315;
+							atlOffset=0.0027236938;
 						};
 					};
 					id=2906;
-					atlOffset=-0.0015335083;
+					atlOffset=-0.0016441345;
 				};
 				class Item4
 				{
@@ -24468,7 +24472,7 @@ class Mission
 				};
 			};
 			id=2914;
-			atlOffset=-0.38181877;
+			atlOffset=-0.38181305;
 		};
 	};
 };
