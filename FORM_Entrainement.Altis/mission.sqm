@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=925;
+		nextID=962;
 	};
 	class Camera
 	{
-		pos[]={15216.103,26.819534,17435.525};
-		dir[]={-0.74297416,-0.48326054,0.46309045};
-		up[]={-0.410119,0.87547582,0.25562415};
-		aside[]={0.52895707,-1.4770194e-008,0.84864974};
+		pos[]={15161.921,40.895569,17303.055};
+		dir[]={-0.70338047,-0.69468331,-0.15061502};
+		up[]={-0.67928725,0.71931565,-0.14545584};
+		aside[]={-0.20938602,-4.7904905e-007,0.97784019};
 	};
 };
 binarizationWanted=0;
@@ -354,7 +354,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -391,7 +391,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category2
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -18414,13 +18414,13 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="SolarPanel1_Hide";
-											expression="_this animateSource ['SolarPanel1_Hide',_value,true]";
+											property="allowDamage";
+											expression="_this allowdamage _value;";
 											class Value
 											{
 												class data
 												{
-													singleType="SCALAR";
+													singleType="BOOL";
 													value=0;
 												};
 											};
@@ -18438,7 +18438,20 @@ class Mission
 												};
 											};
 										};
-										nAttributes=2;
+										class Attribute2
+										{
+											property="SolarPanel1_Hide";
+											expression="_this animateSource ['SolarPanel1_Hide',_value,true]";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0;
+												};
+											};
+										};
+										nAttributes=3;
 									};
 								};
 								class Item4
