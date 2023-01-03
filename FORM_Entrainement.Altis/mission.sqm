@@ -1,29 +1,29 @@
 version=54;
 class EditorData
 {
-	moveGridStep=0.125;
+	moveGridStep=1;
 	angleGridStep=1.5707964;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=545;
+	toggles=549;
 	mods[]=
 	{
 		"gsri_opex"
 	};
 	class ItemIDProvider
 	{
-		nextID=3103;
+		nextID=3105;
 	};
 	class LayerIndexProvider
 	{
-		nextID=925;
+		nextID=962;
 	};
 	class Camera
 	{
-		pos[]={15216.103,26.819534,17435.525};
-		dir[]={-0.74297416,-0.48326054,0.46309045};
-		up[]={-0.410119,0.87547582,0.25562415};
-		aside[]={0.52895707,-1.4770194e-008,0.84864974};
+		pos[]={15224.919,25.538597,17456.334};
+		dir[]={-0.58302057,-0.44440123,0.68017036};
+		up[]={-0.28922281,0.89581931,0.33741683};
+		aside[]={0.75925797,-2.5102054e-008,0.6508109};
 	};
 };
 binarizationWanted=0;
@@ -77,6 +77,7 @@ addons[]=
 	"VSM_ACU_Config",
 	"A3_Structures_F_Mil_Flags",
 	"A3_Structures_F_EPB_Civ_Camping",
+	"gsri_props",
 	"A3_Structures_F_Ind_Shed",
 	"A3_Soft_F_Exp_LSV_01",
 	"kat_misc",
@@ -91,7 +92,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=34;
+		items=35;
 		class Item0
 		{
 			className="A3_Structures_F";
@@ -274,45 +275,51 @@ class AddonsMetaData
 		};
 		class Item27
 		{
+			className="gsri_props";
+			name="gsri_props";
+			author="www.gsri.team";
+		};
+		class Item28
+		{
 			className="A3_Structures_F_Ind";
 			name="Arma 3 - Industrial Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item28
+		class Item29
 		{
 			className="A3_Soft_F_Exp";
 			name="Arma 3 Apex - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item29
+		class Item30
 		{
 			className="kat_misc";
 			name="KAT - KAT - MISC";
 			author="Katalam";
 			url="https://github.com/Tomcat-SG/KAM";
 		};
-		class Item30
+		class Item31
 		{
 			className="plp_containers";
 			name="plp_containers";
 		};
-		class Item31
+		class Item32
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item32
+		class Item33
 		{
 			className="A3_Structures_F_Exp";
 			name="Arma 3 Apex - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item33
+		class Item34
 		{
 			className="A3_Structures_F_Argo";
 			name="Arma 3 Malden - Buildings and Structures";
@@ -354,7 +361,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -391,7 +398,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category2
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -22794,29 +22801,13 @@ class Mission
 					name="PlaceArmes";
 					class Entities
 					{
-						items=10;
+						items=9;
 						class Item0
 						{
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={15219.201,20.937824,17475.957};
-							};
-							side="Empty";
-							flags=5;
-							class Attributes
-							{
-							};
-							id=2908;
-							type="Flag_NATO_F";
-							atlOffset=0.0096092224;
-						};
-						class Item1
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={15218.259,20.945509,17474.84};
+								position[]={15212,20.964775,17469};
 							};
 							side="Empty";
 							flags=5;
@@ -22825,39 +22816,8 @@ class Mission
 							};
 							id=2910;
 							type="Flag_UNO_F";
-							atlOffset=0.0034065247;
 						};
-						class Item2
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={15217.375,20.947956,17473.75};
-							};
-							side="Empty";
-							flags=5;
-							class Attributes
-							{
-							};
-							id=2911;
-							type="Flag_White_F";
-						};
-						class Item3
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={15216.375,20.949291,17472.75};
-							};
-							side="Empty";
-							flags=5;
-							class Attributes
-							{
-							};
-							id=2912;
-							type="Flag_White_F";
-						};
-						class Item4
+						class Item1
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -22990,7 +22950,7 @@ class Mission
 								nAttributes=7;
 							};
 						};
-						class Item5
+						class Item2
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -23123,7 +23083,7 @@ class Mission
 								nAttributes=7;
 							};
 						};
-						class Item6
+						class Item3
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -23167,7 +23127,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item7
+						class Item4
 						{
 							dataType="Object";
 							class PositionInfo
@@ -23183,7 +23143,7 @@ class Mission
 							type="Land_Camping_Light_F";
 							atlOffset=0.30396461;
 						};
-						class Item8
+						class Item5
 						{
 							dataType="Object";
 							class PositionInfo
@@ -23199,7 +23159,7 @@ class Mission
 							type="Land_Camping_Light_F";
 							atlOffset=0.4119854;
 						};
-						class Item9
+						class Item6
 						{
 							dataType="Object";
 							class PositionInfo
@@ -23215,9 +23175,39 @@ class Mission
 							type="Land_Camping_Light_F";
 							atlOffset=0.17006874;
 						};
+						class Item7
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={15214,20.940802,17471};
+							};
+							side="Empty";
+							flags=5;
+							class Attributes
+							{
+							};
+							id=3103;
+							type="gsri_flags_fr";
+						};
+						class Item8
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={15216,20.938137,17473};
+							};
+							side="Empty";
+							flags=5;
+							class Attributes
+							{
+							};
+							id=3104;
+							type="gsri_flags_gsri";
+						};
 					};
 					id=2913;
-					atlOffset=0.21199608;
+					atlOffset=0.042919159;
 				};
 				class Item3
 				{
@@ -24472,7 +24462,7 @@ class Mission
 				};
 			};
 			id=2914;
-			atlOffset=-0.38181305;
+			atlOffset=-0.38240051;
 		};
 	};
 };
