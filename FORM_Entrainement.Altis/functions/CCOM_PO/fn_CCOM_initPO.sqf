@@ -23,8 +23,7 @@ if(isServer) then {
 		private _obstacle = _x#0 createVehicle [0,0,0];
 		_obstacle enableSimulationGlobal false;
 		_obstacle allowDamage false;
-		private _position = _source getRelPos [_x#1, 90];
-		_obstacle setPosASL [_position#0, _position#1, (getPosASL _source) #2 +0.1];
+		_obstacle setPosATL (_source getRelPos [_x#1, 90]);
 		_obstacle setDir (getDir _source + (_x#2));
 	} forEach [
 		["Land_Obstacle_RunAround_F", 19.5, -90],
