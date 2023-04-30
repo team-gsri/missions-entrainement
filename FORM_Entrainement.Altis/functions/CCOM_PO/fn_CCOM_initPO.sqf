@@ -31,7 +31,7 @@ if(isServer) then {
 		["Land_Obstacle_Crawl_F", 44.5, 90],
 		["Land_ConcreteWall_03_m_6m_F", 52.3, 90],
 		["Land_Obstacle_Climb_F", 61.5, 180],
-		["GTS_Girafe", 76, -90],
+		["Land_Cargo10_military_green_F", 76, -90],
 		["Land_Obstacle_Cross_F", 85.4, -90]
 	];
 };

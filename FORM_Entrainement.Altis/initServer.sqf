@@ -19,3 +19,6 @@
 { _x hideObjectGlobal true } forEach [cqb1_red1,cqb1_red2];
 // Flip alert lights
 ["GSRI_CQB1_activation", { { _x hideObjectGlobal !(isObjectHidden _x) } forEach [cqb1_red1, cqb1_red2, cqb1_green1, cqb1_green2] }] call CBA_fnc_addEventHandler;
+
+[po_1] call GSRI_fnc_CCOM_initPO;
+[po_2] call GSRI_fnc_CCOM_initPO;
