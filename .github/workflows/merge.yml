@@ -1,8 +1,8 @@
-name: lint
+name: merge
 
 on:
   pull_request:
-    branches: [master]
+    branches: [main]
 
 jobs:
   lint:
@@ -14,4 +14,4 @@ jobs:
       - name: Lint sources
         uses: jokoho48/sqflint@master
         with:
-          args: --exit e --directory FORM_Entrainement.Altis
+          args: --exit e --directory GSRI_Entrainement.Altis

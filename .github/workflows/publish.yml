@@ -1,10 +1,10 @@
-name: release
+name: publish
 
 on:
   workflow_dispatch:
   push:
-    branches: [master]
-    paths: ["FORM_Entrainement.Altis/**"]
+    branches: [main]
+    paths: ["GSRI_Entrainement.Altis/**"]
 
 jobs:
   release:
@@ -14,4 +14,4 @@ jobs:
         uses: team-gsri/actions-arma-tools/release-mission@v0
         with:
           missionName: Entrainement
-          source: ./FORM_Entrainement.Altis
+          source: ./GSRI_Entrainement.Altis
